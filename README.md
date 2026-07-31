@@ -1,4 +1,4 @@
-# 🎤 Analyse de Sentiment Vocal
+# Analyse de Sentiment Vocal
 
 ## Projet d'Examen - Deep Learning 2 (2026)
  
