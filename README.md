@@ -294,5 +294,5 @@ DL_Exam_Project/
 ├── requirements.txt
 ├── download_models.py            # Scripts de téléchargement des modele
 └── README.md
-└── RDesmostration des 3 classes.mov # Desmostration
+└── Desmostration des 3 classes.mov # Desmostration
 
