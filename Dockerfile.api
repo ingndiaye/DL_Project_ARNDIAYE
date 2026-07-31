@@ -1,0 +1,50 @@
+# Dockerfile.api
+FROM python:3.10-slim
+
+# Installer les dépendances système
+RUN apt-get update && apt-get install -y \
+    ffmpeg \
+    libsndfile1 \
+    libsox-fmt-mp3 \
+    sox \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN useradd -m -u 1000 appuser
+
+WORKDIR /app
+
+# ✅ Installer les dépendances Python de base
+RUN pip install --no-cache-dir typing-extensions>=4.10.0
+
+# ✅ Installer PyTorch 2.6.0
+RUN pip install --default-timeout=1000 --no-cache-dir \
+    torch==2.6.0 \
+    torchaudio==2.6.0 \
+    --index-url https://download.pytorch.org/whl/cpu \
+    --retries 10
+
+# ✅ Installer safetensors
+RUN pip install --no-cache-dir safetensors>=0.4.0
+
+# ✅ INSTALLER LES BIBLIOTHÈQUES MANQUANTES
+RUN pip install --no-cache-dir sentencepiece>=0.1.99 tiktoken>=0.5.0 protobuf>=3.20.0
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copier le code
+COPY . .
+
+ENV HF_HOME=/app/models_cache
+ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1
+ENV TOKENIZERS_PARALLELISM=false
+
+RUN mkdir -p /app/models_cache /app/models /app/tests/test_audio /app/logs
+
+RUN chown -R appuser:appuser /app
+USER appuser
+
+EXPOSE 8000
+
+CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

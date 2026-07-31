@@ -1,0 +1,22 @@
+[
+    {
+        "text": "Je suis très satisfait du service, merci beaucoup",
+        "sentiment": "positif"
+    },
+    {
+        "text": "Je suis déçu par la qualité du produit",
+        "sentiment": "negatif"
+    },
+    {
+        "text": "Je voudrais des informations sur mon compte",
+        "sentiment": "neutre"
+    },
+    {
+        "text": "Excellent travail, je recommande vivement",
+        "sentiment": "positif"
+    },
+    {
+        "text": "Service client horrible, je ne reviendrai plus",
+        "sentiment": "negatif"
+    }
+]

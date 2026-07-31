@@ -1,0 +1,58 @@
+# =====================================================
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Environnements virtuels
+env/
+venv/
+.venv/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Hugging Face / Modèles
+
+# Tous les modèles téléchargés
+models/
+models_cache/
+checkpoints/
+weights/
+cache/
+
+# Poids des modèles
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Cache Hugging Face
+.huggingface/
+.cache/
+hf_cache/
+
+# IDE
+.vde/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/

@@ -1,0 +1,363 @@
+/* ============================================
+   app/static/style.css
+   Fichier de style pour l'interface Gradio
+   ============================================ */
+
+/* Style général */
+.gradio-container {
+    max-width: 1100px !important;
+    margin: auto !important;
+    padding: 20px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* ============================================
+   EN-TÊTE
+   ============================================ */
+.header-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 20px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    padding: 0;   
+    flex-shrink: 0;
+    overflow: hidden;   
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+    display: block;   
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ 
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+.header-subtitle {
+    font-size: 13px;
+    opacity: 0.8;
+    margin: 5px 0 0 0;
+    color: #ccc;
+    text-align: center;
+}
+
+.header-right {
+    text-align: right;
+    font-size: 12px;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.header-right a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   CARTES FONCTIONNALITÉS
+   ============================================ */
+.features-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0 25px 0;
+}
+
+.feature-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.feature-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.feature-desc {
+    font-size: 12px;
+    color: #666;
+}
+
+/* ============================================
+   RÉSULTAT STYLISÉ
+   ============================================ */
+.result-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    padding: 25px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    margin: 10px 0;
+}
+
+.result-card h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result-sentiment {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.result-emoji {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.result-label {
+    font-size: 28px;
+    font-weight: bold;
+    background: white;
+    border-radius: 8px;
+    padding: 8px 20px;
+    display: inline-block;
+}
+
+/* Couleurs des sentiments */
+.label-positif {
+    color: #4CAF50;
+}
+
+.label-negatif {
+    color: #f44336;
+}
+
+.label-neutre {
+    color: #FF9800;
+}
+
+.result-confidence {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.result-transcription {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ============================================
+   MESSAGES D'ERREUR
+   ============================================ */
+.error-message {
+    background: #ffebee;
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 4px solid #f44336;
+    color: #c62828;
+}
+
+.info-message {
+    text-align: center;
+    padding: 50px 20px;
+    color: #999;
+    font-size: 16px;
+}
+
+/* ============================================
+   PIED DE PAGE
+   ============================================ */
+.footer-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 16px;
+    padding: 20px 25px;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.footer-section a {
+    color: #d20505;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #f0f1f6;
+}
+
+.footer-subtitle {
+    opacity: 0.7;
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #f0f1f6;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #f0f1f6;
+}
+
+.footer-info strong {
+    color: #f0f1f6;
+}
+
+.footer-copy {
+    margin-top: 12px;
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .header-left {
+        flex-direction: column;
+    }
+    
+    .header-right {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .features-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .logo-container {
+        width: 120px;
+        height: 120px;
+        font-size: 28px;
+    }
+    
+    .header-title {
+        font-size: 20px;
+    }
+    
+    .result-label {
+        font-size: 22px;
+        padding: 5px 15px;
+    }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.feature-card {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ============================================
+   BOUTONS PERSONNALISÉS
+   ============================================ */
+.gr-button-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    border: none !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.gr-button-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+.gr-button-secondary {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+    transition: background 0.3s !important;
+}
+
+.gr-button-secondary:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+}

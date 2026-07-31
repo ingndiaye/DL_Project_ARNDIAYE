@@ -1,0 +1,14 @@
+[
+    {
+        "audio_path": "test_audio/positif.wav",
+        "reference_text": "Je suis très satisfait du service, merci beaucoup"
+    },
+    {
+        "audio_path": "test_audio/negatif.wav",
+        "reference_text": "Je suis très déçu, le produit ne correspond pas à la description"
+    },
+    {
+        "audio_path": "test_audio/neutre.wav",
+        "reference_text": "Je voudrais des informations sur mon compte"
+    }
+]

@@ -1,0 +1,43 @@
+{
+  "asr": {
+    "wer": 3.0,
+    "transcriptions": [
+      "je suis vraiment tr\u00e8s content vous \u00eates tr\u00e8s tr\u00e8s gentil jadore tout le monde la relation est excellente en tqi merci beaucoup je vous remercie y fond du c\u0153ur",
+      "vous \u00eates nuls et a rien de bon dans ce que vous faites vous n\u00eates pas intelligents vous n\u00eates pas gentilles vos locaux sont tr\u00e8s sales je t\u00e9ree tout ce que jai vu l\u00e0-bas alors",
+      "vous \u00eates duns quel pays quel est votre domaine dactivit\u00e9  vous \u00eates sp\u00e9cialis\u00e9 dans quoi comment je pourrai avoir un compte chez vous"
+    ],
+    "references": [
+      "Je suis tr\u00e8s satisfait du service, merci beaucoup",
+      "Je suis tr\u00e8s d\u00e9\u00e7u, le produit ne correspond pas \u00e0 la description",
+      "Je voudrais des informations sur mon compte"
+    ],
+    "errors": []
+  },
+  "sentiment": {
+    "accuracy": 0.6,
+    "f1_score": 0.6,
+    "predictions": [
+      "positif",
+      "n\u00e9gatif",
+      "neutre",
+      "positif",
+      "n\u00e9gatif"
+    ],
+    "references": [
+      "positif",
+      "negatif",
+      "neutre",
+      "positif",
+      "negatif"
+    ],
+    "confidences": [
+      0.734421980381012,
+      0.5124840259552003,
+      0.7096768647432328,
+      0.7873969495296479,
+      0.6657801151275635
+    ],
+    "report": "              precision    recall  f1-score   support\n\n     Positif       1.00      1.00      1.00         2\n     N\u00e9gatif       0.00      0.00      0.00         2\n      Neutre       1.00      1.00      1.00         1\n\n   micro avg       1.00      0.60      0.75         5\n   macro avg       0.67      0.67      0.67         5\nweighted avg       0.60      0.60      0.60         5\n"
+  },
+  "timestamp": "2026-07-31T17:08:11.959793"
+}
