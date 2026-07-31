@@ -182,7 +182,7 @@ PYTHONPATH=. python download_models.py
 
 ```
 
-*Les modèles seront mis en cache dans `models_cache/` (`asr/` ~1.2 GB et `sentiment/` ~500 MB).*
+*Les modèles seront mis en cache dans `models_cache/` (`asr/` 1.2 GB et `sentiment/` 500 MB).*
 
 ---
 
