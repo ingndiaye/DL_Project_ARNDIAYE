@@ -15,11 +15,15 @@ build/
 dist/
 *.egg-info/
 
-# Hugging Face / Modèles
+# Ignorer tout le contenu de models_cache
+models_cache/*
+models_cache/**/*
+
+# Mais garder le dossier lui-même
+!models_cache/
+!models_cache/.gitkeep
 
 # Tous les modèles téléchargés
-models/
-models_cache/
 checkpoints/
 weights/
 cache/
