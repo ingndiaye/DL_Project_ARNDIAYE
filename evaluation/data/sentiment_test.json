@@ -1,22 +1,14 @@
 [
     {
-        "text": "Je suis très satisfait du service, merci beaucoup",
+        "text": "je suis vraiment très content vous êtes très très gentil j'adore tout le monde la relation est excellente en tout cas merci beaucoup je vous remercie du fond du cœur",
         "sentiment": "positif"
-    },
+    }, 
     {
-        "text": "Je suis déçu par la qualité du produit",
-        "sentiment": "negatif"
-    },
-    {
-        "text": "Je voudrais des informations sur mon compte",
+        "text": "vous êtes dans quel pays quel est votre domaine d'activité vous êtes spécialisé dans quoi comment je pourrai avoir un compte chez vous",
         "sentiment": "neutre"
-    },
+    }, 
     {
-        "text": "Excellent travail, je recommande vivement",
-        "sentiment": "positif"
-    },
-    {
-        "text": "Service client horrible, je ne reviendrai plus",
+        "text": "vous êtes nuls et y'a rien de bon dans ce que vous faites vous n'êtes pas intelligents vous n'êtes pas gentilles vos locaux sont très sales je desteste tout ce que jai vu là-bas alors",
         "sentiment": "negatif"
     }
 ]

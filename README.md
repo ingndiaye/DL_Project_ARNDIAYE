@@ -103,6 +103,24 @@ En termes de performances, ce modèle atteint une précision d'environ 85 % sur 
 * Pré-traitement audio / Denoising *(Partiellement implémenté)*.
 * Optimisation ONNX / TensorRT pour accélérer l'inférence *(À explorer)*.
 
+---
+
+##  Évaluation
+
+### Métriques
+
+* **ASR (Wav2Vec 2.0)** : WER : 15% 
+* **Sentiment (CamemBERT)** : Accuracy :85% | F1-Score :84%
+
+### Résultats par classe
+
+| Classe | Précision | Rappel | F1-score |
+| --- | --- | --- | --- |
+| **Positif** | 87% | 86% | 84.5% |
+| **Négatif** | 76% | 75% | 73.5% |
+| **Neutre** | 76% | 75% | 75.5% |
+
+
 
 
 ---
@@ -246,23 +264,6 @@ docker compose down
 
 ---
 
-##  Évaluation
-
-### Métriques
-
-* **ASR (Wav2Vec 2.0)** : WER ~15% | CER ~5%
-* **Sentiment (CamemBERT)** : Accuracy ~85% | F1-Score ~84%
-
-### Résultats par classe
-
-| Classe | Précision | Rappel | F1-score |
-| --- | --- | --- | --- |
-| **Positif** | 87% | 86% | 86.5% |
-| **Négatif** | 84% | 83% | 83.5% |
-| **Neutre** | 76% | 75% | 75.5% |
-
----
-
 ##  Structure du projet
 
 ```text
@@ -293,4 +294,5 @@ DL_Exam_Project/
 ├── requirements.txt
 ├── download_models.py            # Scripts de téléchargement des modele
 └── README.md
+└── RDesmostration des 3 classes.mov
 
